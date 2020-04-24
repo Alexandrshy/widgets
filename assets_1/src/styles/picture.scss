@@ -1,0 +1,12 @@
+.picture {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &--additional {
+    opacity: 0;
+    transition: opacity 0.85s ease;
+  }
+}

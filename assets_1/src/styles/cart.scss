@@ -1,0 +1,115 @@
+.cart {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: 0.125rem;
+  display: flex;
+  align-items: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  color: var(--carnation);
+  background-color: transparent;
+  letter-spacing: 0.85px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transform: translate(0, 0);
+  opacity: 1;
+
+  @media (hover: hover) and (min-width: 600px) {
+    bottom: -5px;
+    left: 0;
+    right: auto;
+    width: auto;
+    height: auto;
+    padding: 0.3rem;
+    transform: translate(-25px, 0);
+    opacity: 0;
+
+    &:hover {
+      color: var(--carnation);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    padding: 0.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    opacity: 1;
+    bottom: 0;
+    right: 0.125rem;
+    left: auto;
+    transform: translate(0, 0);
+
+    @media (max-width: 600px) {
+      padding: 0.35rem;
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 0.35rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    fill: var(--carnation);
+    transition: fill 0.3s ease;
+
+    @media (hover: hover) {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: 0.6rem;
+    }
+
+    @media (prefers-reduced-motion: reduce), (max-width: 600px) {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    @media (hover: hover) {
+      position: relative;
+      width: auto;
+      height: auto;
+    }
+
+    @media (prefers-reduced-motion: reduce), (max-width: 600px) {
+      position: absolute;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+      white-space: nowrap;
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+  }
+
+  &:focus {
+    transform: translate(0, 0);
+    opacity: 1;
+    box-shadow: 0 0 0 0.25rem rgba(247, 101, 95, 0.3);
+
+    + .product__price {
+      opacity: 0;
+      transform: translate(55px, 0);
+    }
+  }
+}

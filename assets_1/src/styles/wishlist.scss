@@ -1,0 +1,42 @@
+.wishlist {
+  position: absolute;
+  top: -0.25rem;
+  right: 0.125rem;
+  padding: 0.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  fill: var(--gray);
+  transition: fill 0.3s ease;
+
+  @media (max-width: 600px) {
+    top: -0.25rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    height: 1.8rem;
+    padding: 0.35rem;
+  }
+
+  @media (hover: hover) {
+    &:hover:not(:disabled) {
+      fill: var(--tundora);
+    }
+  }
+
+  &:disabled {
+    fill: var(--iron);
+  }
+
+  &--active {
+    fill: var(--carnation);
+
+    @media (hover: hover) {
+      &:hover:not(:disabled) {
+        fill: var(--tundora);
+      }
+    }
+  }
+
+  &__icon {
+    width: 100%;
+  }
+}

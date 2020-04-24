@@ -1,0 +1,128 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+}
+
+html,
+body {
+  font-family: var(--font-poppins);
+  font-size: 1rem;
+  background-color: var(--white);
+  color: var(--tundora);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-weight-bold);
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+  padding: 10rem 0;
+
+  @media (max-width: 1200px) {
+    padding: 8rem 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 5rem 0;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 40px;
+
+  @media (max-width: 1600px) {
+    max-width: 1200px;
+  }
+
+  @media (max-width: 1200px) {
+    max-width: 900px;
+  }
+
+  @media (max-width: 992px) {
+    max-width: 720px;
+    padding: 0 20px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+button {
+  padding: 0.85rem;
+  background-color: var(--white);
+  border: 0;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  color: var(--gray);
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  span {
+    transition: opacity 0.3s ease;
+  }
+
+  @media (hover: hover) {
+    &:hover:not(:disabled) {
+      color: var(--tundora);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(106, 106, 107, 0.3);
+  }
+
+  &:disabled {
+    background-color: var(--iron);
+    cursor: not-allowed;
+
+    span {
+      opacity: 0.8;
+    }
+  }
+}
+
+.link {
+  color: var(--gray);
+  transition: color 0.3s ease;
+  text-decoration: none;
+
+  @media (hover: hover) {
+    &:hover {
+      color: var(--tundora);
+    }
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(106, 106, 107, 0.3);
+  }
+
+  &--block {
+    display: block;
+  }
+
+  &--dark {
+    color: var(--tundora);
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(45, 45, 45, 0.3);
+    }
+  }
+}

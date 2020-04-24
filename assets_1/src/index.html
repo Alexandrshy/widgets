@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Products list
+    </title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <section class="products">
+          <h1 class="products__title">New products</h1>
+          <h2 class="products__subtitle">New collection on sale now</h2>
+          <div class="products__wrapper">
+            <ul class="products__list">
+              <li class="product">
+                <div class="product__inner">
+                  <ul class="label">
+                    <li class="label__item label__item--reduced">
+                      Reduced price
+                    </li>
+                  </ul>
+                  <ul class="label label--right">
+                    <li class="label__item label__item--sale">-20%</li>
+                  </ul>
+                  <div class="product__pictures">
+                    <a href="#" class="link link--block">
+                      <div class="product__pictures-box">
+                        <img
+                          class="picture picture--main"
+                          src="./img/1-2.jpg"
+                          srcset="./img/1-2x2.jpg 2x"
+                          alt="Black hoodie with print with people"
+                          loading="lazy"
+                        />
+                        <img
+                          class="picture picture--additional"
+                          src="./img/1-1.jpg"
+                          srcset="./img/1-1x2.jpg 2x"
+                          alt="Black hoodie with print with people"
+                          loading="lazy"
+                        />
+                      </div>
+                    </a>
+                    <button class="product__view" type="button">
+                      <svg
+                        class="product__view-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        role="presentation"
+                      >
+                        <path
+                          d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                        />
+                      </svg>
+                      <span>quick view</span>
+                    </button>
+                  </div>
+                  <div class="product__main">
+                    <p class="product__name">
+                      <a href="#" class="link">Black hoodie</a>
+                    </p>
+                    <a href="#" class="cart link">
+                      <svg
+                        class="cart__icon"
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="presentation"
+                      >
+                        <g>
+                          <path
+                            d="m472 452c0 11.046-8.954 20-20 20h-20v20c0 11.046-8.954 20-20 20s-20-8.954-20-20v-20h-20c-11.046 0-20-8.954-20-20s8.954-20 20-20h20v-20c0-11.046 8.954-20 20-20s20 8.954 20 20v20h20c11.046 0 20 8.954 20 20zm0-312v192c0 11.046-8.954 20-20 20s-20-8.954-20-20v-172h-40v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-192v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-40v312h212c11.046 0 20 8.954 20 20s-8.954 20-20 20h-232c-11.046 0-20-8.954-20-20v-352c0-11.046 8.954-20 20-20h60.946c7.945-67.477 65.477-120 135.054-120s127.109 52.523 135.054 120h60.946c11.046 0 20 8.954 20 20zm-121.341-20c-7.64-45.345-47.176-80-94.659-80s-87.019 34.655-94.659 80z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="cart__text">Add to cart</span>
+                    </a>
+                    <p class="product__price">
+                      <span class="price price--old">$41.00</span>
+                      <span class="price price--new">$32.80</span>
+                    </p>
+                    <button
+                      class="wishlist"
+                      type="button"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
+                        class="wishlist__icon"
+                        viewBox="0 0 512 512"
+                        role="presentation"
+                      >
+                        <path
+                          d="M453.1216,79.0117a127.9988,127.9988,0,0,0-181.0869.0679L256.5239,94.7769,241.1421,79.1143l-.1016-.1026a127.9993,127.9993,0,0,0-181.019-.0005l-6.91,6.91a127.9987,127.9987,0,0,0,0,181.019L235.4854,449.3145,256.08,470.8916l.4912-.4912.5327.5327,19.2939-20.3594L460.0317,266.94a128.1456,128.1456,0,0,0,0-181.0185ZM437.4043,244.313,256.5713,425.1455,75.7383,244.313a96,96,0,0,1,0-135.7642l6.9106-6.91a95.9992,95.9992,0,0,1,135.7134-.05l38.0923,38.7871L294.73,101.6387a96,96,0,0,1,135.7646.0005l6.91,6.9091A96.11,96.11,0,0,1,437.4043,244.313Z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__inner">
+                  <ul class="label">
+                    <li class="label__item label__item--new">
+                      New
+                    </li>
+                  </ul>
+                  <div class="product__pictures">
+                    <a href="#" class="link link--block">
+                      <div class="product__pictures-box">
+                        <img
+                          class="picture picture--main"
+                          src="./img/2-2.jpg"
+                          srcset="./img/2-2x2.jpg 2x"
+                          alt="White sweatshirt without a hood with a black print"
+                          loading="lazy"
+                        />
+                        <img
+                          class="picture picture--additional"
+                          src="./img/2-1.jpg"
+                          srcset="./img/2-1x2.jpg 2x"
+                          alt="Large image of a black print on a white sweatshirt"
+                          loading="lazy"
+                        />
+                      </div>
+                    </a>
+                    <button class="product__view" type="button">
+                      <svg
+                        class="product__view-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        role="presentation"
+                      >
+                        <path
+                          d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                        />
+                      </svg>
+                      <span>quick view</span>
+                    </button>
+                  </div>
+                  <div class="product__main">
+                    <p class="product__name">
+                      <a href="#" class="link">White sweatshirt</a>
+                    </p>
+                    <a href="#" class="cart link">
+                      <svg
+                        class="cart__icon"
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="presentation"
+                      >
+                        <g>
+                          <path
+                            d="m472 452c0 11.046-8.954 20-20 20h-20v20c0 11.046-8.954 20-20 20s-20-8.954-20-20v-20h-20c-11.046 0-20-8.954-20-20s8.954-20 20-20h20v-20c0-11.046 8.954-20 20-20s20 8.954 20 20v20h20c11.046 0 20 8.954 20 20zm0-312v192c0 11.046-8.954 20-20 20s-20-8.954-20-20v-172h-40v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-192v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-40v312h212c11.046 0 20 8.954 20 20s-8.954 20-20 20h-232c-11.046 0-20-8.954-20-20v-352c0-11.046 8.954-20 20-20h60.946c7.945-67.477 65.477-120 135.054-120s127.109 52.523 135.054 120h60.946c11.046 0 20 8.954 20 20zm-121.341-20c-7.64-45.345-47.176-80-94.659-80s-87.019 34.655-94.659 80z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="cart__text">Add to cart</span>
+                    </a>
+                    <p class="product__price">
+                      <span class="price price--old">$41.00</span>
+                      <span class="price price--new">$32.80</span>
+                    </p>
+                    <button
+                      class="wishlist"
+                      type="button"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
+                        class="wishlist__icon"
+                        viewBox="0 0 512 512"
+                        role="presentation"
+                      >
+                        <path
+                          d="M453.1216,79.0117a127.9988,127.9988,0,0,0-181.0869.0679L256.5239,94.7769,241.1421,79.1143l-.1016-.1026a127.9993,127.9993,0,0,0-181.019-.0005l-6.91,6.91a127.9987,127.9987,0,0,0,0,181.019L235.4854,449.3145,256.08,470.8916l.4912-.4912.5327.5327,19.2939-20.3594L460.0317,266.94a128.1456,128.1456,0,0,0,0-181.0185ZM437.4043,244.313,256.5713,425.1455,75.7383,244.313a96,96,0,0,1,0-135.7642l6.9106-6.91a95.9992,95.9992,0,0,1,135.7134-.05l38.0923,38.7871L294.73,101.6387a96,96,0,0,1,135.7646.0005l6.91,6.9091A96.11,96.11,0,0,1,437.4043,244.313Z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__inner">
+                  <div class="product__pictures">
+                    <a href="#" class="link link--block">
+                      <div class="product__pictures-box">
+                        <img
+                          class="picture picture--main"
+                          src="./img/3-2.jpg"
+                          srcset="./img/3-2x2.jpg 2x"
+                          alt="Black hoodie with a large number of print"
+                          loading="lazy"
+                        />
+                        <img
+                          class="picture picture--additional"
+                          src="./img/3-1.jpg"
+                          srcset="./img/3-1x2.jpg 2x"
+                          alt="larger image of a number of prints on a black hoodie"
+                          loading="lazy"
+                        />
+                      </div>
+                    </a>
+                    <button class="product__view" type="button">
+                      <svg
+                        class="product__view-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        role="presentation"
+                      >
+                        <path
+                          d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                        />
+                      </svg>
+                      <span>quick view</span>
+                    </button>
+                  </div>
+                  <div class="product__main">
+                    <p class="product__name">
+                      <a href="#" class="link">Black hoodie</a>
+                    </p>
+                    <a href="#" class="cart link">
+                      <svg
+                        class="cart__icon"
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="presentation"
+                      >
+                        <g>
+                          <path
+                            d="m472 452c0 11.046-8.954 20-20 20h-20v20c0 11.046-8.954 20-20 20s-20-8.954-20-20v-20h-20c-11.046 0-20-8.954-20-20s8.954-20 20-20h20v-20c0-11.046 8.954-20 20-20s20 8.954 20 20v20h20c11.046 0 20 8.954 20 20zm0-312v192c0 11.046-8.954 20-20 20s-20-8.954-20-20v-172h-40v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-192v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-40v312h212c11.046 0 20 8.954 20 20s-8.954 20-20 20h-232c-11.046 0-20-8.954-20-20v-352c0-11.046 8.954-20 20-20h60.946c7.945-67.477 65.477-120 135.054-120s127.109 52.523 135.054 120h60.946c11.046 0 20 8.954 20 20zm-121.341-20c-7.64-45.345-47.176-80-94.659-80s-87.019 34.655-94.659 80z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="cart__text">Add to cart</span>
+                    </a>
+                    <p class="product__price">
+                      <span class="price price">$47.00</span>
+                    </p>
+                    <button
+                      class="wishlist"
+                      type="button"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
+                        class="wishlist__icon"
+                        viewBox="0 0 512 512"
+                        role="presentation"
+                      >
+                        <path
+                          d="M453.1216,79.0117a127.9988,127.9988,0,0,0-181.0869.0679L256.5239,94.7769,241.1421,79.1143l-.1016-.1026a127.9993,127.9993,0,0,0-181.019-.0005l-6.91,6.91a127.9987,127.9987,0,0,0,0,181.019L235.4854,449.3145,256.08,470.8916l.4912-.4912.5327.5327,19.2939-20.3594L460.0317,266.94a128.1456,128.1456,0,0,0,0-181.0185ZM437.4043,244.313,256.5713,425.1455,75.7383,244.313a96,96,0,0,1,0-135.7642l6.9106-6.91a95.9992,95.9992,0,0,1,135.7134-.05l38.0923,38.7871L294.73,101.6387a96,96,0,0,1,135.7646.0005l6.91,6.9091A96.11,96.11,0,0,1,437.4043,244.313Z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__inner">
+                  <div class="product__pictures">
+                    <a href="#" class="link link--block">
+                      <div class="product__pictures-box">
+                        <img
+                          class="picture picture--main"
+                          src="./img/4-2.jpg"
+                          srcset="./img/4-2x2.jpg 2x"
+                          alt="Black hoodie with a large print of the black"
+                          loading="lazy"
+                        />
+                        <img
+                          class="picture picture--additional"
+                          src="./img/4-1.jpg"
+                          srcset="./img/4-1x2.jpg 2x"
+                          alt="Larger image of a large print on a black hoodie"
+                          loading="lazy"
+                        />
+                      </div>
+                    </a>
+                    <button class="product__view" type="button">
+                      <svg
+                        class="product__view-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        role="presentation"
+                      >
+                        <path
+                          d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                        />
+                      </svg>
+                      <span>quick view</span>
+                    </button>
+                  </div>
+                  <div class="product__main">
+                    <p class="product__name">
+                      <a href="#" class="link">Black hoodie</a>
+                    </p>
+                    <a href="#" class="cart link">
+                      <svg
+                        class="cart__icon"
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="presentation"
+                      >
+                        <g>
+                          <path
+                            d="m472 452c0 11.046-8.954 20-20 20h-20v20c0 11.046-8.954 20-20 20s-20-8.954-20-20v-20h-20c-11.046 0-20-8.954-20-20s8.954-20 20-20h20v-20c0-11.046 8.954-20 20-20s20 8.954 20 20v20h20c11.046 0 20 8.954 20 20zm0-312v192c0 11.046-8.954 20-20 20s-20-8.954-20-20v-172h-40v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-192v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-40v312h212c11.046 0 20 8.954 20 20s-8.954 20-20 20h-232c-11.046 0-20-8.954-20-20v-352c0-11.046 8.954-20 20-20h60.946c7.945-67.477 65.477-120 135.054-120s127.109 52.523 135.054 120h60.946c11.046 0 20 8.954 20 20zm-121.341-20c-7.64-45.345-47.176-80-94.659-80s-87.019 34.655-94.659 80z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="cart__text">Add to cart</span>
+                    </a>
+                    <p class="product__price">
+                      <span class="price price">$23.00</span>
+                    </p>
+                    <button
+                      class="wishlist"
+                      type="button"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
+                        class="wishlist__icon"
+                        viewBox="0 0 512 512"
+                        role="presentation"
+                      >
+                        <path
+                          d="M453.1216,79.0117a127.9988,127.9988,0,0,0-181.0869.0679L256.5239,94.7769,241.1421,79.1143l-.1016-.1026a127.9993,127.9993,0,0,0-181.019-.0005l-6.91,6.91a127.9987,127.9987,0,0,0,0,181.019L235.4854,449.3145,256.08,470.8916l.4912-.4912.5327.5327,19.2939-20.3594L460.0317,266.94a128.1456,128.1456,0,0,0,0-181.0185ZM437.4043,244.313,256.5713,425.1455,75.7383,244.313a96,96,0,0,1,0-135.7642l6.9106-6.91a95.9992,95.9992,0,0,1,135.7134-.05l38.0923,38.7871L294.73,101.6387a96,96,0,0,1,135.7646.0005l6.91,6.9091A96.11,96.11,0,0,1,437.4043,244.313Z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__inner">
+                  <ul class="label">
+                    <li class="label__item label__item--popular">
+                      Popular
+                    </li>
+                  </ul>
+                  <div class="product__pictures">
+                    <a href="#" class="link link--block">
+                      <div class="product__pictures-box">
+                        <img
+                          class="picture picture--main"
+                          src="./img/5-2.jpg"
+                          srcset="./img/5-2x2.jpg 2x"
+                          alt="Black hoodie with text"
+                          loading="lazy"
+                        />
+                        <img
+                          class="picture picture--additional"
+                          src="./img/5-1.jpg"
+                          srcset="./img/5-1x2.jpg 2x"
+                          alt="Larger image of a text on a hoodie"
+                          loading="lazy"
+                        />
+                      </div>
+                    </a>
+                    <button class="product__view" type="button">
+                      <svg
+                        class="product__view-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        role="presentation"
+                      >
+                        <path
+                          d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                        />
+                      </svg>
+                      <span>quick view</span>
+                    </button>
+                  </div>
+                  <div class="product__main">
+                    <p class="product__name">
+                      <a href="#" class="link">Inscribed hoodie</a>
+                    </p>
+                    <a href="#" class="cart link">
+                      <svg
+                        class="cart__icon"
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="presentation"
+                      >
+                        <g>
+                          <path
+                            d="m472 452c0 11.046-8.954 20-20 20h-20v20c0 11.046-8.954 20-20 20s-20-8.954-20-20v-20h-20c-11.046 0-20-8.954-20-20s8.954-20 20-20h20v-20c0-11.046 8.954-20 20-20s20 8.954 20 20v20h20c11.046 0 20 8.954 20 20zm0-312v192c0 11.046-8.954 20-20 20s-20-8.954-20-20v-172h-40v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-192v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-40v312h212c11.046 0 20 8.954 20 20s-8.954 20-20 20h-232c-11.046 0-20-8.954-20-20v-352c0-11.046 8.954-20 20-20h60.946c7.945-67.477 65.477-120 135.054-120s127.109 52.523 135.054 120h60.946c11.046 0 20 8.954 20 20zm-121.341-20c-7.64-45.345-47.176-80-94.659-80s-87.019 34.655-94.659 80z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="cart__text">Add to cart</span>
+                    </a>
+                    <p class="product__price">
+                      <span class="price price">$49.00</span>
+                    </p>
+                    <button
+                      class="wishlist"
+                      type="button"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
+                        class="wishlist__icon"
+                        viewBox="0 0 512 512"
+                        role="presentation"
+                      >
+                        <path
+                          d="M453.1216,79.0117a127.9988,127.9988,0,0,0-181.0869.0679L256.5239,94.7769,241.1421,79.1143l-.1016-.1026a127.9993,127.9993,0,0,0-181.019-.0005l-6.91,6.91a127.9987,127.9987,0,0,0,0,181.019L235.4854,449.3145,256.08,470.8916l.4912-.4912.5327.5327,19.2939-20.3594L460.0317,266.94a128.1456,128.1456,0,0,0,0-181.0185ZM437.4043,244.313,256.5713,425.1455,75.7383,244.313a96,96,0,0,1,0-135.7642l6.9106-6.91a95.9992,95.9992,0,0,1,135.7134-.05l38.0923,38.7871L294.73,101.6387a96,96,0,0,1,135.7646.0005l6.91,6.9091A96.11,96.11,0,0,1,437.4043,244.313Z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product">
+                <div class="product__inner">
+                  <ul class="label">
+                    <li class="label__item label__item--popular">
+                      Popular
+                    </li>
+                  </ul>
+                  <div class="product__pictures">
+                    <a href="#" class="link link--block">
+                      <div class="product__pictures-box">
+                        <img
+                          class="picture picture--main"
+                          src="./img/6-2.jpg"
+                          srcset="./img/6-2x2.jpg 2x"
+                          alt="Rick and Morty hoodie"
+                          loading="lazy"
+                        />
+                        <img
+                          class="picture picture--additional"
+                          src="./img/6-1.jpg"
+                          srcset="./img/6-1x2.jpg 2x"
+                          alt="Larger image of a Rick and Morty print on a black hoodie"
+                          loading="lazy"
+                        />
+                      </div>
+                    </a>
+                    <button class="product__view" type="button">
+                      <svg
+                        class="product__view-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 30 30"
+                        role="presentation"
+                      >
+                        <path
+                          d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                        />
+                      </svg>
+                      <span>quick view</span>
+                    </button>
+                  </div>
+                  <div class="product__main">
+                    <p class="product__name">
+                      <a href="#" class="link">Rick and Morty hoodie</a>
+                    </p>
+                    <a href="#" class="cart link">
+                      <svg
+                        class="cart__icon"
+                        viewBox="0 0 512 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                        role="presentation"
+                      >
+                        <g>
+                          <path
+                            d="m472 452c0 11.046-8.954 20-20 20h-20v20c0 11.046-8.954 20-20 20s-20-8.954-20-20v-20h-20c-11.046 0-20-8.954-20-20s8.954-20 20-20h20v-20c0-11.046 8.954-20 20-20s20 8.954 20 20v20h20c11.046 0 20 8.954 20 20zm0-312v192c0 11.046-8.954 20-20 20s-20-8.954-20-20v-172h-40v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-192v60c0 11.046-8.954 20-20 20s-20-8.954-20-20v-60h-40v312h212c11.046 0 20 8.954 20 20s-8.954 20-20 20h-232c-11.046 0-20-8.954-20-20v-352c0-11.046 8.954-20 20-20h60.946c7.945-67.477 65.477-120 135.054-120s127.109 52.523 135.054 120h60.946c11.046 0 20 8.954 20 20zm-121.341-20c-7.64-45.345-47.176-80-94.659-80s-87.019 34.655-94.659 80z"
+                          />
+                        </g>
+                      </svg>
+                      <span class="cart__text">Add to cart</span>
+                    </a>
+                    <p class="product__price">
+                      <span class="price price">$33.00</span>
+                    </p>
+                    <button
+                      class="wishlist"
+                      type="button"
+                      aria-label="Add to wishlist"
+                    >
+                      <svg
+                        class="wishlist__icon"
+                        viewBox="0 0 512 512"
+                        role="presentation"
+                      >
+                        <path
+                          d="M453.1216,79.0117a127.9988,127.9988,0,0,0-181.0869.0679L256.5239,94.7769,241.1421,79.1143l-.1016-.1026a127.9993,127.9993,0,0,0-181.019-.0005l-6.91,6.91a127.9987,127.9987,0,0,0,0,181.019L235.4854,449.3145,256.08,470.8916l.4912-.4912.5327.5327,19.2939-20.3594L460.0317,266.94a128.1456,128.1456,0,0,0,0-181.0185ZM437.4043,244.313,256.5713,425.1455,75.7383,244.313a96,96,0,0,1,0-135.7642l6.9106-6.91a95.9992,95.9992,0,0,1,135.7134-.05l38.0923,38.7871L294.73,101.6387a96,96,0,0,1,135.7646.0005l6.91,6.9091A96.11,96.11,0,0,1,437.4043,244.313Z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

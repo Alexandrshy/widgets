@@ -1,0 +1,16 @@
+.price {
+  color: var(--tundora);
+
+  &:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+
+  &--old {
+    color: var(--gray);
+    text-decoration: line-through;
+  }
+
+  &--new {
+    color: var(--carnation);
+  }
+}
